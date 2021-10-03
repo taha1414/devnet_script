@@ -29,21 +29,3 @@ with open(interface_file,'w') as f:
             'input_error': data[1],
             'output_error': data[2]
         })
-
-
-
-# table_data = []
-
-# for intf, data in output.items():
-#          counters = data.get('counters')
-#          if counters:
-#              table_row=[]
-#              if 'in_crc_errors' in counters:
-#                  table_row.append(intf)
-#                  table_row.append(str(counters['in_crc_errors']))
-#              else:
-#                  table_row.append(intf)
-#                  table_row.append('N/A')
-#              table_data.append(table_row)
-
-# print(tabulate(table_data, headers=['Interface', 'CRC Errors Counter'], tablefmt='orgtbl'))
